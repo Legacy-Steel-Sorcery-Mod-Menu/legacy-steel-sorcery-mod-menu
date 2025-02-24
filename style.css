@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://framerusercontent.com/images/ENjjD53zyFAuHPiX1SUeVlgpuE.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Cinzel", serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Center all h2 text */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #6D0C02;
+}
+
+.hero .description {
+  color: #371B03;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #E0E0E0;
+  -webkit-text-stroke: 0.1px white;
+  text-stroke: 0.1px white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  color: #E0E0E0;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  text-align: center;
+  margin: 1rem auto;
+  display: block;
+  max-width: 200px;
+  border: 2px solid white;
+}
+
+.download-btn:hover {
+  background-color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature, .benefit, .step {
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.faq-items {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.faq-item {
+  margin-bottom: 0.5rem;
+}
+
+.faq-item summary {
+  padding: 1rem;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::before {
+  content: '+';
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.faq-item[open] summary::before {
+  content: '×';
+}
+
+.faq-content {
+  padding: 1rem 1rem 1rem 2.5rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+.features, .why-choose, .installation {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.features:hover, .why-choose:hover, .installation:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
